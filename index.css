@@ -59,6 +59,22 @@ a.anchor {
     overflow-y: hidden;
 }
 
+#paper-edge {
+    height: 100%;
+    width: 300px;
+    right: 95px;
+    transform: rotate(8deg);
+    position: absolute;
+}
+
+#paper-edge-white {
+    height: 100%;
+    width: 300px;
+    right: 92px;
+    transform: rotate(8deg);
+    position: absolute;
+}
+
 #zinefest {
     padding-top: 21px;
     color: #964124;
@@ -139,7 +155,9 @@ td :nth-child(2) {
 
 .column {
     float: left;
-    width: 50%;
+    width: 46%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Clear floats after the columns */
@@ -148,4 +166,22 @@ td :nth-child(2) {
     display: table;
     clear: both;
     z-index: -1;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.gallery-column {
+    flex: 32%;
+    padding: 0 4px;
+}
+
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
