@@ -2,22 +2,50 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+h3 {
+    padding-left: 12px;
+}
+
+hr {
+    background-color: black;
+    margin: 0px;
 }
 
 a.anchor {
     display: block;
     position: relative;
-    top: -240px; /* offsets headers from top when clicking on navigation links */
+    top: -240px;
+    /* offsets headers from top when clicking on navigation links */
     visibility: hidden;
 }
 
 #navbar {
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
     background-color: black;
-    z-index: 1;
+    z-index: 2;
+}
+
+#navbar h1,
+p {
+    padding-left: 12px;
 }
 
 #navbar ul {
@@ -45,11 +73,14 @@ a.anchor {
     background-color: #111;
 }
 
+
+/* SIDE BANNER COLUMN START */
+
 #sidenav {
     height: 100%;
-    width: 260px;
+    width: 360px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
     background-image: linear-gradient(#7f2054, #3e3583);
@@ -59,33 +90,19 @@ a.anchor {
     overflow-y: hidden;
 }
 
-#paper-edge {
-    height: 100%;
-    width: 300px;
-    right: 95px;
-    transform: rotate(8deg);
-    position: absolute;
-}
-
-#paper-edge-white {
-    height: 100%;
-    width: 300px;
-    right: 92px;
-    transform: rotate(8deg);
-    position: absolute;
-}
-
 #zinefest {
     padding-top: 21px;
     color: #964124;
     background-color: white;
-    height: 200px;
+    height: 250px;
     width: 100%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
 
 #zinefest p {
+    padding-left: 4%;
+    padding-right: 4%;
     margin: 0px;
     font-size: 30px;
 }
@@ -93,17 +110,126 @@ a.anchor {
 #zinefest :nth-child(2) {
     margin-top: 10px;
     font-size: 50px;
-    font-weight: bold;
 }
 
-#logos img {
-    width: 120px;
+#zinefest :nth-child(3) {
+    margin-top: 10px;
+    font-size: 60px;
 }
+
+#sidebar-flyer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#paper-edge {
+    height: 100%;
+    width: 300px;
+    right: 190px;
+    transform: rotate(3deg);
+    position: absolute;
+}
+
+#paper-edge-white {
+    height: 100%;
+    width: 300px;
+    right: 186px;
+    transform: rotate(3deg);
+    position: absolute;
+}
+
+#kittylogo {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+/* SIDE BANNER COLUMN START */
+
+/* SIDEBANNER MOBILE START */
+
+#sidenav-mobile {
+    height: 100%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    background-image: linear-gradient(#7f2054, #3e3583);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#zinefest {
+    color: #964124;
+    background-color: white;
+    height: 250px;
+    width: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+
+#zinefest p {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 0px;
+    font-size: 30px;
+}
+
+#zinefest :nth-child(2) {
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+#zinefest :nth-child(3) {
+    margin-top: 10px;
+    font-size: 60px;
+}
+
+#sidebar-flyer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#paper-edge-top-mobile {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: -4px;
+}
+
+#paper-edge-bottom-mobile {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: -4px;
+}
+
+
+#kittylogo-mobile {
+    width: 40%;
+    position: absolute;
+    left: auto;
+    right: 10px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+/* SIDEBANNER MOBILE END*/
+
 
 #main {
     margin-top: 180px;
-    margin-right: 260px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
+    margin-right: 360px;
+    /* Same as the width of the sidenav */
 }
 
 #upcoming-events {
@@ -116,19 +242,22 @@ a.anchor {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: 12px;
 }
 
 th {
     text-align: center;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.8); /*  10% opaque green */
+    background: rgba(0, 0, 0, 0.8);
+    /*  10% opaque green */
 }
 
 td {
     text-align: center;
     border: 1px solid white;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.8); /*  10% opaque green */
+    background: rgba(0, 0, 0, 0.8);
+    /*  10% opaque green */
 }
 
 tr :first-child {
@@ -153,11 +282,36 @@ td :nth-child(2) {
     font-size: 32px;
 }
 
+#about p {
+    background-color: black;
+}
+
+#about-staff {
+    padding: 12px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #333;
+    background-size: contain;
+}
+
+#about-staff p {
+    background-color: #7f2054a3;
+    padding: 12px;
+    font-size: larger;
+    font-family: monospace;
+    text-shadow: 1px 1px 0px black;
+}
+
+
+#staff-photo {
+    width: 100%;
+    transform: rotate(350deg);
+}
+
 .column {
     float: left;
-    width: 46%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 45%;
+    padding: 2px
 }
 
 /* Clear floats after the columns */
@@ -171,12 +325,12 @@ td :nth-child(2) {
 .gallery-row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 12px;
 }
 
 /* Create two equal columns that sits next to each other */
 .gallery-column {
-    flex: 32%;
+    flex: 30%;
     padding: 0 4px;
 }
 
@@ -184,4 +338,49 @@ td :nth-child(2) {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+}
+
+/* min screen 320px wide */
+@media screen and (max-width: 320px) {
+    #mailing-list {
+        margin: 10px;
+        padding-top: 20px;
+    }
+
+    a.anchor {
+        top: -285px
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #sidenav {
+        display: none;
+    }
+
+    #main {
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 200px;
+    }
+
+}
+
+@media screen and (min-width: 740px) {
+    #sidenav-mobile {
+        display: none;
+    }
+}
+
+/* for mailing list */
+@media screen and (max-width: 890px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* for mailing list */
+@media screen and (max-height: 880px) {
+    #kittylogo {
+        display: none;
+    }
 }
