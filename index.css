@@ -73,7 +73,6 @@ p {
     background-color: #111;
 }
 
-
 /* SIDE BANNER COLUMN START */
 
 #sidenav {
@@ -174,7 +173,6 @@ p {
     width: 100%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-
 }
 
 #zinefest p {
@@ -213,7 +211,6 @@ p {
     margin-bottom: -4px;
 }
 
-
 #kittylogo-mobile {
     width: 40%;
     position: absolute;
@@ -224,7 +221,6 @@ p {
 }
 
 /* SIDEBANNER MOBILE END*/
-
 
 #main {
     margin-top: 180px;
@@ -237,6 +233,12 @@ p {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.black-bg {
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 table {
@@ -302,7 +304,6 @@ td :nth-child(2) {
     text-shadow: 1px 1px 0px black;
 }
 
-
 #staff-photo {
     width: 100%;
     transform: rotate(350deg);
@@ -311,7 +312,7 @@ td :nth-child(2) {
 .column {
     float: left;
     width: 45%;
-    padding: 2px
+    padding: 2px;
 }
 
 /* Clear floats after the columns */
@@ -348,7 +349,7 @@ td :nth-child(2) {
     }
 
     a.anchor {
-        top: -285px
+        top: -285px;
     }
 }
 
@@ -362,7 +363,6 @@ td :nth-child(2) {
         margin-right: 2px;
         margin-top: 200px;
     }
-
 }
 
 @media screen and (min-width: 740px) {
@@ -383,4 +383,34 @@ td :nth-child(2) {
     #kittylogo {
         display: none;
     }
+}
+
+/* TABLING RESOURCES PAGE */
+
+#tabling-list {
+    margin-left: 5px;
+}
+
+.decimage {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin: 20px;
+}
+
+.decimage img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.decimage p {
+    margin-top: 1px;
+}
+
+#main-2 {
+    margin-top: 180px;
+}
+
+#main-2 li {
+    margin-bottom: 10px;
 }
