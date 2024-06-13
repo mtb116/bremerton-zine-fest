@@ -92,6 +92,17 @@ p {
     background-color: #7f2054;
 }
 
+#zinefest_button_2 {
+    padding: 10px;
+    background-color: white;
+    border-radius: 2px;
+    text-decoration: none !important;
+}
+
+#zinefest_button_2:hover {
+    background-color: black;
+}
+
 /* SIDE BANNER COLUMN START */
 
 #sidenav {
