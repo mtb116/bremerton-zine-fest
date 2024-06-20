@@ -444,3 +444,19 @@ td :nth-child(2) {
 #main-2 li {
     margin-bottom: 10px;
 }
+
+/* ZINE FEST PAGE */
+
+#vendor_table {
+    width: 50%;
+    margin: 16px;
+}
+
+#vendor_table td {
+    text-align: left;
+    padding: 12px;
+}
+
+#vendor_table tr:nth-child(even) {
+    background: #7f2054;
+}
