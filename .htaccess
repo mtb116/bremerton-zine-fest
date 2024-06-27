@@ -1,1 +1,7 @@
-Options -Indexes
+# disable directory browsing
+
+Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
+
+# enable directory browsing
+
+Options All +Indexes
